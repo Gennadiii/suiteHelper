@@ -28,8 +28,6 @@ describe(process.env.deviceName, () => {
           counterMatcher = await counterMatcherHelper.initCounterMatcher();
         });
 
-        // If error is thrown in "beforeEach" block - all "it" blocks will get executed
-        // They will waste time and throw their own errors since precondition wasn't done
         beforeEach(async () => {
           await time.sleep(100, 'beforeEach');
           counter++;
