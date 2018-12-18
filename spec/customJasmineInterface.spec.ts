@@ -34,6 +34,8 @@ suite({
   },
   afterEachSpec: async () => await time.sleep(200, 'afterEach'),
   afterAllSpecs: async () => await time.sleep(1000, 'afterAll'),
+  // In case if specs array doesn't work out and you need to fill "discribe" block the way you need
+  // this is possible by using "tests" function and use default Jasmine interface there.
   specs: [
     {
       name: 'test 1',
