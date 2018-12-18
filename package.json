@@ -1,0 +1,25 @@
+{
+  "name": "suitehelper",
+  "version": "1.0.0",
+  "description": "Alternative Jasmine Interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "defaultJasmineSpec": "node dist/runDefaultJasmineSpec.js",
+    "customJasmineInterfaceSpec": "node dist/runCustomJasmineInterfaceSpec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gennadiii/suiteHelper.git"
+  },
+  "author": "Gennadiii",
+  "license": "ISC",
+  "homepage": "https://github.com/Gennadiii/suiteHelper#readme",
+  "dependencies": {
+    "@types/jasmine": "3.3.2",
+    "@types/node": "10.12.15",
+    "jasmine": "3.3.1",
+    "jasmine2-reporter": "1.0.1",
+    "typescript": "3.2.2"
+  }
+}
