@@ -1,0 +1,2 @@
+# suiteHelper
+Alternative Jasmine Interface
