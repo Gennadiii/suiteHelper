@@ -11,12 +11,13 @@ export function suite(params: suiteInterface) {
     afterAllSpecs,
     specs = [],
   } = params;
-  const inner = name.pop();
-  const exception = {error: null};
-
+  
   if (name.length === 0) {
     throw new Error(`Please specify suite name`);
   }
+  
+  const inner = name.pop();
+  const exception = {error: null};
 
   describe(process.env.deviceName, () => {
     name.reduceRight((prev, cur) => {
